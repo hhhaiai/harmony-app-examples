@@ -1,0 +1,58 @@
+{
+  "app": {
+    "bundleName": "cn.yangshipin.harmony.demo",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.harmonyapp",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "metaData": {
+          "customizeData": [
+            {
+              "extra": "",
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        },
+        "orientation": "unspecified",
+        "name": "com.example.harmonyapp.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "HarmonyAppExamples",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
