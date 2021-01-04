@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "cn.yangshipin.harmony.demo",
+    "bundleName": "com.example.harmonyapp",
     "vendor": "example",
     "version": {
       "code": 1,

@@ -2,13 +2,13 @@ apply plugin: 'com.huawei.ohos.hap'
 ohos {
     signingConfigs {
         debug {
-            storeFile file('/Users/liukerui/harmony/hm.p12')
-            storePassword '0000001AB8DD751C0FD129B89E81E682A704FB105BF05286D6F432DE42DD4A954A69C805F7316CBE5CCD'
-            keyAlias 'hm'
-            keyPassword '0000001A52025B3355B33E79D252F7745468643C7B25138DF7504837E1AAB9A9AF0C697CA81BC3CBABB1'
+            storeFile file('/Users/liukerui/harmony/debug/debug.p12')
+            storePassword '00000019C0F380B8289DA7A5EB6462DBA6066E7ECC6A1A463938672102C60AE5DCD8F98062E178257E'
+            keyAlias 'hmdebug'
+            keyPassword '00000019BED7499A3F0FB06C2B6A4833A27E9B6DBCDEC64DEC2ADB0E14A9E1F5F2C4FA65672662BB71'
             signAlg 'SHA256withECDSA'
-            profile file('/Users/liukerui/harmony/hm.p7b')
-            certpath file('/Users/liukerui/harmony/hm.cer')
+            profile file('/Users/liukerui/harmony/debug/debug.p7b')
+            certpath file('/Users/liukerui/harmony/debug/debug.cer')
         }
     }
     compileSdkVersion 4
