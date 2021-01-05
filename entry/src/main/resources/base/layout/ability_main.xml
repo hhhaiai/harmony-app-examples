@@ -5,6 +5,22 @@
     ohos:width="match_parent"
     ohos:orientation="vertical">
 
+    <Button
+        ohos:id="$+id:button1"
+        ohos:height="520"
+        ohos:width="match_parent"
+        ohos:text_size="60"
+        ohos:background_element="$graphic:capsule_button_element.xml"
+        ohos:text="自定义设备搜索对话框"/>
+
+    <Button
+        ohos:id="$+id:button2"
+        ohos:height="520"
+        ohos:width="match_parent"
+        ohos:text_size="60"
+        ohos:background_element="$color:red"
+        ohos:text="设备搜索对话框"/>
+
     <Text
         ohos:id="$+id:text_helloworld"
         ohos:height="match_content"

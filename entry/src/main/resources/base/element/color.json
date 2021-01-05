@@ -1,0 +1,12 @@
+{
+  "color":[
+    {
+      "name":"red",
+      "value":"#ff0000"
+    },
+    {
+      "name":"red_ref",
+      "value":"$color:red"
+    }
+  ]
+}
