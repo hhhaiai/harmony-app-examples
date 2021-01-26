@@ -29,7 +29,7 @@ public class VerticalListAbilitySlice extends JAbilitySlice implements JAbilityH
         for (int i = 0; i < 100; i++) {
             data.add(new TextInfo("" + (i + 1)));
         }
-        ListItemProvider<TextInfo> itemProvider = new ListItemProvider<>();
+        ListItemProvider<TextInfo> itemProvider = new ListItemProvider<>(this);
         itemProvider.setDataList(data);
         listContainer.setItemProvider(itemProvider);
 
@@ -57,20 +57,23 @@ public class VerticalListAbilitySlice extends JAbilitySlice implements JAbilityH
 
         @Override
         public ItemViewHolder getViewHolder(AbilityHolder iAbility, ListContainer listContainer, ListItemProvider itemProvider, Component component) {
-            return new StringHolder(iAbility, listContainer, itemProvider, component);
+            return new StringHolder((JAbilityHolder) iAbility, listContainer, itemProvider, component);
         }
     }
 
     /**
      * view
      */
-    public static class StringHolder extends ItemViewHolder<AbilityHolder, TextInfo> {
+    public static class StringHolder extends ItemViewHolder<JAbilityHolder, TextInfo> {
 
         Text text;
 
-        public StringHolder(AbilityHolder iAbility, ListContainer listContainer, ListItemProvider itemProvider, Component itemComponent) {
+        public StringHolder(JAbilityHolder iAbility, ListContainer listContainer, ListItemProvider itemProvider, Component itemComponent) {
             super(iAbility, listContainer, itemProvider, itemComponent);
             text = findComponent(ResourceTable.Id_text);
+            itemComponent.setClickedListener(component -> {
+                iAbility.terminate();
+            });
         }
 
         @Override

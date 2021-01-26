@@ -7,4 +7,6 @@ import ohos.aafwk.content.Intent;
 public interface JAbilityHolder extends AbilityHolder {
 
     void present(AbilitySlice targetSlice, Intent intent);
+
+    void terminate();
 }
