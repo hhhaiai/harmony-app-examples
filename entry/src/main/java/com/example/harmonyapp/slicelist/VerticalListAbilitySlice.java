@@ -1,5 +1,6 @@
 package com.example.harmonyapp.slicelist;
 
+import com.bigpeach.ability.JAbilityHolder;
 import com.bigpeach.ability.JAbilitySlice;
 import com.bigpeach.components.ListItemProvider;
 import com.bigpeach.components.viewholder.AbilityHolder;
@@ -14,7 +15,7 @@ import ohos.agp.components.Text;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VerticalListAbilitySlice extends JAbilitySlice {
+public class VerticalListAbilitySlice extends JAbilitySlice implements JAbilityHolder {
 
     ListContainer listContainer;
 
