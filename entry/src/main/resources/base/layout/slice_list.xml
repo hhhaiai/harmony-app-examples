@@ -6,21 +6,12 @@
     ohos:orientation="vertical">
 
     <Button
-        ohos:id="$+id:list_btn"
+        ohos:id="$+id:vertical_list_btn"
         ohos:height="45vp"
         ohos:width="match_parent"
         ohos:background_element="$graphic:capsule_button_element.xml"
         ohos:margin="8vp"
-        ohos:text="列表样式"
-        ohos:text_size="18fp"/>
-
-    <Button
-        ohos:id="$+id:dialog_btn"
-        ohos:height="45vp"
-        ohos:width="match_parent"
-        ohos:background_element="$graphic:capsule_button_element.xml"
-        ohos:margin="8vp"
-        ohos:text="自定义对话框"
+        ohos:text="基础列表"
         ohos:text_size="18fp"/>
 
 </DirectionalLayout>

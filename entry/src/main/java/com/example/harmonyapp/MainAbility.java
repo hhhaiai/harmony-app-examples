@@ -17,8 +17,9 @@ public class MainAbility extends Ability {
 
     @Override
     public void onStart(Intent intent) {
-        WindowManager.getInstance().getTopWindow().get().setStatusBarColor(0xFF00FF00);
-        //WindowManager.getInstance().getTopWindow().get().addFlags(WindowManager.LayoutConfig.MARK_FULL_SCREEN | WindowManager.LayoutConfig.MARK_ALLOW_LAYOUT_OVERSCAN);
+        Window window = getWindow();
+        window.setStatusBarColor(Color.BLACK.getValue());
+        window.setStatusBarVisibility(Component.VISIBLE);
         super.onStart(intent);
         HiLog.error(label, "MainAbility onStart()");
         super.setMainRoute(MainAbilitySlice.class.getName());

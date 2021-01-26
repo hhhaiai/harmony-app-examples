@@ -20,5 +20,6 @@ ohos {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    implementation project(":bigpeach")
     testCompile'junit:junit:4.12'
 }

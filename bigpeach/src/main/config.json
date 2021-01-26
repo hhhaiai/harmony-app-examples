@@ -1,0 +1,28 @@
+{
+  "app": {
+    "bundleName": "com.example.harmonyapp",
+    "vendor": "bigpeach",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.bigpeach",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "bigpeach",
+      "moduleType": "har"
+    }
+  }
+}
