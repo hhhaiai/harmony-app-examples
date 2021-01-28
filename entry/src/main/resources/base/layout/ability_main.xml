@@ -23,4 +23,22 @@
         ohos:text="自定义对话框"
         ohos:text_size="18fp"/>
 
+    <Button
+        ohos:id="$+id:notify_btn"
+        ohos:height="45vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:capsule_button_element.xml"
+        ohos:margin="8vp"
+        ohos:text="消息通知"
+        ohos:text_size="18fp"/>
+
+    <Button
+        ohos:id="$+id:sliding_drawer_btn"
+        ohos:height="45vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:capsule_button_element.xml"
+        ohos:margin="8vp"
+        ohos:text="滑动抽屉"
+        ohos:text_size="18fp"/>
+
 </DirectionalLayout>

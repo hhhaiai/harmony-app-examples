@@ -21,5 +21,17 @@ public class MainAbilitySlice extends AbilitySlice {
         dialogBtn.setClickedListener(component -> {
 
         });
+
+        Button notifyBtn = (Button) findComponentById(ResourceTable.Id_notify_btn);
+        notifyBtn.setClickedListener(component -> {
+            present(new NotifyAbilitySlice(), new Intent());
+        });
+
+        Button slidingDrawerBtn = (Button) findComponentById(ResourceTable.Id_sliding_drawer_btn);
+        slidingDrawerBtn.setClickedListener(component -> {
+            present(new SlidingDrawerAbilitySlice(), new Intent());
+        });
+
+
     }
 }
