@@ -38,7 +38,7 @@
         ohos:width="match_parent"
         ohos:background_element="$graphic:capsule_button_element.xml"
         ohos:margin="8vp"
-        ohos:text="滑动抽屉"
+        ohos:text="上拉抽屉"
         ohos:text_size="18fp"/>
 
 </DirectionalLayout>

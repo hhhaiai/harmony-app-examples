@@ -4,6 +4,23 @@
     ohos:height="match_parent"
     ohos:width="match_parent">
 
+    <ListContainer
+        ohos:id="$+id:list_container"
+        ohos:height="match_parent"
+        ohos:width="match_parent"/>
+
+    <Button
+        ohos:id="$+id:button"
+        ohos:height="60vp"
+        ohos:width="60vp"
+        ohos:text="Menu"
+        ohos:text_color="#FFFFFF"
+        ohos:background_element="#00587a"
+        ohos:align_parent_right="true"
+        ohos:top_margin="8vp"
+        ohos:right_margin="12vp"
+        ohos:text_size="18fp"/>
+
     <com.bigpeach.components.SlidingDrawerLayout
         ohos:id="$+id:sliding_drawer"
         ohos:height="match_parent"
@@ -20,7 +37,14 @@
                 ohos:id="$+id:handle"
                 ohos:height="80vp"
                 ohos:width="match_parent"
-                ohos:background_element="$media:icon">
+                ohos:background_element="$graphic:capsule_handle_element">
+
+                <Component
+                    ohos:id="$+id:line"
+                    ohos:height="5vp"
+                    ohos:width="100vp"
+                    ohos:horizontal_center="true"
+                    ohos:top_margin="10vp"/>
 
             </DependentLayout>
 
@@ -28,8 +52,16 @@
                 ohos:id="$+id:content"
                 ohos:height="500vp"
                 ohos:width="match_parent"
-                ohos:background_element="$media:icon"
-                ohos:below="$id:handle">
+                ohos:background_element="#242730"
+                ohos:top_margin="60vp">
+
+                <Image
+                    ohos:height="300vp"
+                    ohos:width="300vp"
+                    ohos:center_in_parent="true"
+                    ohos:image_src="$media:cattle"
+                    ohos:scale_mode="stretch"/>
+
             </DependentLayout>
 
         </DependentLayout>
