@@ -69,8 +69,9 @@ public class VerticalListAbilitySlice extends JAbilitySlice {
 # 演示图
 <table>
     <tr>
-        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
-        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
+        <td>上拉菜单</td>
+    </tr>
+    <tr>
         <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
     </tr>
 </table>
