@@ -66,9 +66,14 @@ public class VerticalListAbilitySlice extends JAbilitySlice {
     }
 }
 ```
-上拉滑动抽屉组件效果
-![WAI](https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif)
-
+# 演示图
+<table>
+    <tr>
+        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
+        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
+        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
+    </tr>
+</table>
 
 # 安装教程
 
