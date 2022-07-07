@@ -1,7 +1,9 @@
 # 鸿蒙应用示例
 
 # 简介
-    鸿蒙系统应用开发中使用示例。
+>  鸿蒙系统应用开发中使用示例。
+> https://developer.harmonyos.com/cn/docs/documentation/doc-guides/build_config-0000001052902431
+
 
 
 # 基础框架 bigpeach
@@ -67,23 +69,6 @@ public class VerticalListAbilitySlice extends JAbilitySlice {
 }
 ```
 # 演示图
-<table>
-    <tr>
-        <td>上拉菜单</td>
-    </tr>
-    <tr>
-        <td><img src="https://gitee.com/liukerui/harmony-app-examples/raw/master/image/slidingdrawerlayout_effect.gif"/></td>
-    </tr>
-</table>
-
-# 安装教程
-
-# 使用说明
 
 
-# 参与贡献
-
-
-
-# 特技
 

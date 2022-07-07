@@ -38,11 +38,12 @@ public class SlidingDrawerAbilitySlice extends JAbilitySlice {
             for (int i = 0; i < 100; i++) {
                 data.add(new TextInfo("" + (i + 1)));
             }
-            listContainer.setFooterBoundarySwitch(false);
-            listContainer.setHeaderBoundarySwitch(false);
-            listContainer.setBoundarySwitch(true);
-            listContainer.setBoundaryColor(Color.WHITE);
-            listContainer.setBoundaryThickness(vp2px(8f));
+            // @TODO error
+//            listContainer.setFooterBoundarySwitch(false);
+//            listContainer.setHeaderBoundarySwitch(false);
+//            listContainer.setBoundarySwitch(true);
+//            listContainer.setBoundaryColor(Color.WHITE);
+//            listContainer.setBoundaryThickness(vp2px(8f));
             ListItemProvider<TextInfo> itemProvider = new ListItemProvider<>();
             itemProvider.setDataList(data);
             listContainer.setItemProvider(itemProvider);

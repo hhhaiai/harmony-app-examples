@@ -2,35 +2,85 @@
 apply plugin: 'com.huawei.ohos.app'
 
 ohos {
+    signingConfigs {
+        debug {
+            storeFile file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.p12')
+            storePassword '000000183C0891EF1626106C2C2DA9D984665E5C3DCA263B23CCF0CC9340F755701934F5C224D6D1'
+            keyAlias = 'debugKey'
+            keyPassword '000000189B22DF0708BC6918C2ACC4D757DA92F32FCEB55EF0D093D94D7C91A8D6C1C32C101DD14F'
+            signAlg = 'SHA256withECDSA'
+            profile file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.p7b')
+            certpath file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.cer')
+        }
+    }
     compileSdkVersion 4
     defaultConfig {
         compatibleSdkVersion 3
     }
 }
-	
+
 buildscript {
     repositories {
         maven {
-            url 'https://mirrors.huaweicloud.com/repository/maven/'
+            url 'https://repo.huaweicloud.com/repository/maven/'
         }
         maven {
             url 'https://developer.huawei.com/repo/'
         }
-		jcenter()
+        mavenLocal()
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        // jcenter() { url "http://jcenter.bintray.com/" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        // central
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/central' }
+        // jcenter
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        // public
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        //google
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        //gradle-plugin
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        //apache snapshots
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/apache-snapshots' }
     }
     dependencies {
-        classpath 'com.huawei.ohos:hap:2.4.0.1'
+        classpath 'com.huawei.ohos:hap:3.0.5.2'
+        classpath 'com.huawei.ohos:decctest:1.2.7.2'
     }
 }
 
 allprojects {
     repositories {
         maven {
-            url 'https://mirrors.huaweicloud.com/repository/maven/'
+            url 'https://repo.huaweicloud.com/repository/maven/'
+            //若maven仓是http协议地址，则需要添加如下字段，表示允许使用非安全协议的http仓
+            allowInsecureProtocol = true
         }
         maven {
             url 'https://developer.huawei.com/repo/'
         }
-		jcenter()
+        mavenLocal()
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        // jcenter() { url "http://jcenter.bintray.com/" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        // central
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/central' }
+        // jcenter
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        // public
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        //google
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        //gradle-plugin
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        //apache snapshots
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/apache-snapshots' }
     }
 }

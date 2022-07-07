@@ -1,25 +1,32 @@
+//打包hap插件：将entry/feature模块打包为hap的插件
 apply plugin: 'com.huawei.ohos.hap'
+//decctest测试框架插件
+//apply plugin: 'com.huawei.ohos.decctest'
 ohos {
-    signingConfigs {
-        debug {
-            storeFile file('/Users/liukerui/harmony/debug/debug.p12')
-            storePassword '00000019C0F380B8289DA7A5EB6462DBA6066E7ECC6A1A463938672102C60AE5DCD8F98062E178257E'
-            keyAlias 'hmdebug'
-            keyPassword '00000019BED7499A3F0FB06C2B6A4833A27E9B6DBCDEC64DEC2ADB0E14A9E1F5F2C4FA65672662BB71'
-            signAlg 'SHA256withECDSA'
-            profile file('/Users/liukerui/harmony/debug/debug.p7b')
-            certpath file('/Users/liukerui/harmony/debug/debug.cer')
-        }
-    }
     compileSdkVersion 4
     defaultConfig {
         compatibleSdkVersion 3
     }
-
+    // 真机调试： https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404
+    // 登录直接生成调试key
+    //
+    signingConfigs {
+        debug {
+            storeFile file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.p12')
+            storePassword '00000018A6F053B315EDA5237C5B70195FA86856DAD96B83317CE492278A0FC28DE7759E18A81B78'
+            keyAlias 'debugKey'
+            keyPassword '000000184546512A927B368529A52CC715BEFEE580392FF3DB6D36B68BC2BA5F21998040554C922F'
+            signAlg 'SHA256withECDSA'
+            certpath file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.cer')
+            profile file('/Users/sanbo/.ohos/config/hag/auto_debug_hag_harmonyapp_70086000207587311.p7b')
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
     implementation project(":bigpeach")
-    testCompile'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
+//    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.200'
+
 }

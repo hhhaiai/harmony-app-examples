@@ -1,4 +1,9 @@
+//打包har插件：将HarmonyOS Library模块打包为har的插件
 apply plugin: 'com.huawei.ohos.library'
+////打包jar插件：将Java Library模块打包为jar的插件
+//apply plugin: 'java-library'
+//decctest测试框架插件
+//apply plugin: 'com.huawei.ohos.decctest'
 ohos {
     compileSdkVersion 4
     defaultConfig {
@@ -10,4 +15,6 @@ ohos {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testCompile'junit:junit:4.12'
+//    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.200'
+
 }
